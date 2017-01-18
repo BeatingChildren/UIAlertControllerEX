@@ -15,6 +15,7 @@
 		E599CC681E2EFF5500EEDE9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E599CC661E2EFF5500EEDE9D /* LaunchScreen.storyboard */; };
 		E599CC731E2EFF5500EEDE9D /* UIAlertControllerEXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E599CC721E2EFF5500EEDE9D /* UIAlertControllerEXTests.m */; };
 		E599CC7E1E2EFF5500EEDE9D /* UIAlertControllerEXUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E599CC7D1E2EFF5500EEDE9D /* UIAlertControllerEXUITests.m */; };
+		E599CC8D1E2F03B300EEDE9D /* UIAlertController+showAlertOnMainThread.m in Sources */ = {isa = PBXBuildFile; fileRef = E599CC8C1E2F03B300EEDE9D /* UIAlertController+showAlertOnMainThread.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		E599CC791E2EFF5500EEDE9D /* UIAlertControllerEXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIAlertControllerEXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E599CC7D1E2EFF5500EEDE9D /* UIAlertControllerEXUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIAlertControllerEXUITests.m; sourceTree = "<group>"; };
 		E599CC7F1E2EFF5500EEDE9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E599CC8B1E2F03B300EEDE9D /* UIAlertController+showAlertOnMainThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+showAlertOnMainThread.h"; sourceTree = "<group>"; };
+		E599CC8C1E2F03B300EEDE9D /* UIAlertController+showAlertOnMainThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+showAlertOnMainThread.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				E599CC5C1E2EFF5500EEDE9D /* AppDelegate.m */,
 				E599CC5E1E2EFF5500EEDE9D /* ViewController.h */,
 				E599CC5F1E2EFF5500EEDE9D /* ViewController.m */,
+				E599CC8B1E2F03B300EEDE9D /* UIAlertController+showAlertOnMainThread.h */,
+				E599CC8C1E2F03B300EEDE9D /* UIAlertController+showAlertOnMainThread.m */,
 				E599CC611E2EFF5500EEDE9D /* Main.storyboard */,
 				E599CC641E2EFF5500EEDE9D /* Assets.xcassets */,
 				E599CC661E2EFF5500EEDE9D /* LaunchScreen.storyboard */,
@@ -207,6 +212,7 @@
 				TargetAttributes = {
 					E599CC541E2EFF5500EEDE9D = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = NGZG4QYCU3;
 						ProvisioningStyle = Automatic;
 					};
 					E599CC6D1E2EFF5500EEDE9D = {
@@ -273,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E599CC8D1E2F03B300EEDE9D /* UIAlertController+showAlertOnMainThread.m in Sources */,
 				E599CC601E2EFF5500EEDE9D /* ViewController.m in Sources */,
 				E599CC5D1E2EFF5500EEDE9D /* AppDelegate.m in Sources */,
 				E599CC5A1E2EFF5500EEDE9D /* main.m in Sources */,
@@ -424,10 +431,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NGZG4QYCU3;
 				INFOPLIST_FILE = UIAlertControllerEX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = win.huangqc.UIAlertControllerEX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -435,10 +445,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NGZG4QYCU3;
 				INFOPLIST_FILE = UIAlertControllerEX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = win.huangqc.UIAlertControllerEX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIAlertController+showAlertOnMainThread.h"
 
 @interface ViewController ()
 
@@ -17,8 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self performSelectorInBackground:@selector(showMsgTest) withObject:nil];
 }
 
+-(void)showMsgTest{
+    [UIAlertController showHintAlertOnMainThreadWithMsg:@"嘿嘿嘿"];
+    [UIAlertController showHintAlertOnMainThreadWithMsg:@"呵呵呵"];
+    [UIAlertController showHintAlertOnMainThreadWithMsg:@"哈哈哈"];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
